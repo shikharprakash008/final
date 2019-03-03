@@ -40,7 +40,7 @@ CircleImageView circleImageView,circleImageView2;
         circleImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent robotics = new Intent(Events.this,StudentRegistartion.class);
+                Intent robotics = new Intent(Events.this,Robotics.class);
                 startActivity(robotics);
             }
         });

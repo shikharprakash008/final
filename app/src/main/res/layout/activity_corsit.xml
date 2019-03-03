@@ -129,7 +129,7 @@ Our club is the only one to have our labs set-up I'm collaboration with e-yantra
                 android:textStyle="bold" />
             <ImageView
                 android:layout_marginTop="100dp"
-                android:src="@drawable/fc"
+
                 android:layout_width="match_parent"
                 android:layout_height="300dp" />
 
@@ -155,7 +155,7 @@ Our club is the only one to have our labs set-up I'm collaboration with e-yantra
                 android:textStyle="bold" />
             <ImageView
                 android:layout_marginTop="100dp"
-                android:src="@drawable/rc"
+
                 android:layout_width="match_parent"
                 android:layout_height="300dp" />
 
@@ -232,7 +232,6 @@ Our club is the only one to have our labs set-up I'm collaboration with e-yantra
                 android:textStyle="bold" />
             <ImageView
                 android:layout_marginTop="100dp"
-                android:src="@drawable/comp"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
                 android:layout_marginBottom="10dp"/>

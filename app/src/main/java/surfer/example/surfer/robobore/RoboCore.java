@@ -14,7 +14,7 @@ ImageView imageView;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_robo_core);
 
-        imageView=(ImageView)findViewById(R.id.imageView2);
+        imageView=(ImageView)findViewById(R.id.imageView4);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
