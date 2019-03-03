@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity
 
         videoView = findViewById(R.id.mVideoView);
         setSupportActionBar(toolbar);
-        Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.bg_video);
+        Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.bg);
         videoView.setDrawingCacheEnabled(true);
         videoView.setVideoURI(uri);
         videoView.requestFocus();

@@ -51,7 +51,12 @@
         <activity android:name=".Hackathon" />
         <activity android:name=".Robotics" />
         <activity android:name=".StudentRegistartion" />
-        <activity android:name=".LineFollower"></activity>
+        <activity android:name=".LineFollower" />
+        <activity android:name=".CrossRoads" />
+        <activity android:name=".RoboRash" />
+        <activity android:name=".PaperPresenation" />
+        <activity android:name=".RoboSoccer" />
+        <activity android:name=".Dcode"></activity>
     </application>
 
 </manifest>

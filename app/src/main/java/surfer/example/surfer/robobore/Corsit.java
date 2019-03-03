@@ -15,8 +15,8 @@ ImageView imageView;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_corsit);
-        imageView=(ImageView)findViewById(R.id.imageView2);
 
+imageView=findViewById(R.id.imageView4);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
