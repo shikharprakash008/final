@@ -172,51 +172,9 @@ The club organizes ROBOCORE, one of the biggest robotics event in Karnataka. Wit
 
         </RelativeLayout>
 
-        <RelativeLayout
 
 
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
 
-            />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:text="4.Robosoccer
-                              "/>
-            <ImageView
-                android:layout_marginTop="100dp"
-                android:src="@drawable/abhinav"
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:layout_marginBottom="10dp"/>
-
-        </RelativeLayout>
-
-        <RelativeLayout
-
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-
-            />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:text="5.Paper Presnataion
-                              "/>
-            <ImageView
-                android:layout_marginTop="100dp"
-                android:src="@drawable/abhinav"
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:layout_marginBottom="10dp"/>
-
-        </RelativeLayout>
 
 
     </LinearLayout>
