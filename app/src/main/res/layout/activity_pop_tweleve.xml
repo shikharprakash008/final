@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_contact"
-    tools:context=".prob9">
-
+    tools:context=".PopTweleve">
 
     <TextView
         android:id="@+id/text"
@@ -16,7 +15,7 @@
 
         android:layout_marginTop="50dp"
         android:gravity="center"
-        android:text="Problem Statement 9"
+        android:text="Problem Statement 11"
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold" />
@@ -30,7 +29,7 @@
         android:layout_marginTop="50dp"
         android:gravity="center"
         android:textSize="24sp"
-        android:text="Parking Assist Robot"
+        android:text="Smart City"
         android:textStyle="bold"/>
 
     <TextView
@@ -39,11 +38,10 @@
         android:id="@+id/text3"
         android:layout_below="@+id/text2"
         android:layout_marginTop="50dp"
-        android:text="Develop an IOT based solution to assist parking space in the campus."
+        android:text="Prepare an innovative solution that can be implemented in smart cities."
         android:textColor="@color/white"
         android:textStyle="italic"
         android:gravity="center"
         android:textSize="20sp"
         android:layout_height="wrap_content" />
-
 </RelativeLayout>
