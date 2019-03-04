@@ -53,7 +53,7 @@
       android:id="@+id/text"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:text="HACKATHON (DAY 1)"
+      android:text="ROBOTICS (DAY 1)"
       android:gravity="center"
       android:textSize="24sp"
       android:textStyle="bold"
@@ -86,7 +86,7 @@
                 android:textStyle="bold"
                 android:textSize="24sp"
                 android:fontFamily="cursive"
-                android:text="ROBOTICS (DAY 2)"/>
+                android:text="ROBOTHON (DAY 2)"/>
 
             <de.hdodenhof.circleimageview.CircleImageView
 

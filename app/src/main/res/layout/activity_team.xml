@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgapps"
+
     tools:context=".Team">
 
     <LinearLayout
@@ -13,36 +13,58 @@
         android:layout_height="wrap_content">
         
         <RelativeLayout
-            android:layout_marginTop="32dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/bg_contact"
+            android:layout_marginRight="0dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="123dp"
             >
 
             <ImageView
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:src="@drawable/group"
                 android:layout_width="62dp"
-                android:layout_height="62dp" />
+                android:layout_height="62dp"
+                android:layout_alignTop="@+id/text"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="17dp"
+                android:layout_marginRight="17dp"
+                android:src="@drawable/group" />
 
             <TextView
                 android:id="@+id/text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="20dp"
                 android:text="The Team"
+                android:textStyle="bold"
                 android:textColor="#ffffff"
                 android:textSize="24sp" />
+
             <TextView
-                android:layout_marginTop="6dp"
-                android:textSize="18sp"
-                android:text="53 Members"
-                android:textColor="#52BAFF"
-                android:layout_below="@+id/text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                />
+                android:layout_below="@+id/text"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="49dp"
+                android:layout_marginTop="2dp"
+                android:text="53 Members"
+                android:textColor="#52BAFF"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="18dp"
+                app:srcCompat="@drawable/back" />
 
         </RelativeLayout>
         <GridLayout
@@ -54,7 +76,7 @@
             android:layout_height="wrap_content">
 
             <android.support.v7.widget.CardView
-              android:layout_width="wrap_content"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
@@ -64,35 +86,44 @@
 
 
 
-            <RelativeLayout
+                <RelativeLayout
 
-                android:padding="16dp"
-                android:layout_gravity="center"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
 
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/image1"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
+
+                    android:padding="16dp"
                     android:layout_gravity="center"
-                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
 
-                     />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+                        android:src="@mipmap/keshav_b" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/image1"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="12dp"
-                    android:text="Arghyadeep"
-                    android:textColor="#6f6f6f"
-                    android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/kesh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="keshav"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp" />
 
-            </RelativeLayout>
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/kesh"
+                        android:layout_centerHorizontal="true"
+                        android:text="Vice-Chairman" />
+
+                </RelativeLayout>
             </android.support.v7.widget.CardView>
 
 
@@ -109,8 +140,6 @@
 
 
                 <RelativeLayout
-
-
 
                     android:padding="16dp"
                     android:layout_gravity="center"
@@ -124,220 +153,27 @@
                         android:layout_height="80dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="16dp"
-                        android:src="@drawable/abhinav" />
+                        android:src="@mipmap/pankaj" />
 
                     <TextView
+                        android:id="@+id/pank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_below="@+id/image2"
                         android:layout_centerHorizontal="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Rahul Kumar"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp"
-                        />
-
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-
-
-                <RelativeLayout
-
-
-                    android:padding="16dp"
-                    android:layout_gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
-
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image3"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="16dp"
-                         />
-
-                    <TextView
-                        android:layout_below="@+id/image3"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Jeeva"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-
-
-                <RelativeLayout
-
-
-                    android:padding="16dp"
-                    android:layout_gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
-
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image4"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="16dp"
-                        />
-
-                    <TextView
-                        android:layout_below="@+id/image4"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Dhanush"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-
-
-                <RelativeLayout
-
-
-                    android:padding="16dp"
-                    android:layout_gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image5"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-
-                        />
-
-                    <TextView
-                        android:layout_below="@+id/image5"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Ankit"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-
-
-                <RelativeLayout
-
-
-                    android:padding="16dp"
-                    android:layout_gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image6"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-
-
-                        />
-
-                    <TextView
-                        android:layout_below="@+id/image6"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Keshav"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-
-
-                <RelativeLayout
-
-
-                    android:padding="16dp"
-                    android:layout_gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image7"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-
-                        />
-
-                    <TextView
-                        android:layout_below="@+id/image7"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
                         android:text="Pankaj"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp" />
 
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pank"
+                        android:layout_centerHorizontal="true"
+                        android:text="Vice-Chairman" />
+
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
@@ -358,25 +194,34 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
+
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image8"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
+                        android:id="@+id/abhinav"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-
-                        />
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+                        android:src="@mipmap/abhinav" />
 
                     <TextView
-                        android:layout_below="@+id/image8"
-                        android:layout_centerHorizontal="true"
+                        android:id="@+id/abhi"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_below="@+id/abhinav"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="12dp"
-                        android:text="Abhinav"
+                        android:text="Pankaj"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp" />
 
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/abhi"
+                        android:layout_centerHorizontal="true"
+                        android:text="Tresurer" />
+
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
@@ -398,25 +243,34 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
+
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image9"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
+                        android:id="@+id/anuj"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-
-                        />
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+                        android:src="@mipmap/anuj" />
 
                     <TextView
-                        android:layout_below="@+id/image9"
-                        android:layout_centerHorizontal="true"
+                        android:id="@+id/anu"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_below="@+id/anuj"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="12dp"
                         android:text="Anuj"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp" />
 
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/anu"
+                        android:layout_centerHorizontal="true"
+                        android:text="Web Developer" />
+
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
@@ -438,21 +292,74 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
+
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image10"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
+                        android:id="@+id/image5"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        />
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+
+                        android:src="@mipmap/amit" />
 
                     <TextView
-                        android:layout_below="@+id/image10"
-                        android:layout_centerHorizontal="true"
+                        android:id="@+id/ami"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_below="@+id/image5"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="12dp"
                         android:text="Amit"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ami"
+                        android:layout_centerHorizontal="true"
+                        android:text="Graphic Designer" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+
+
+                <RelativeLayout
+
+
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image6"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+
+
+                        android:src="@mipmap/bhavani" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image6"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="Bhavani"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp" />
 
@@ -477,19 +384,142 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
+
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image11"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
+                        android:id="@+id/image7"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        />
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+
+                        android:src="@drawable/gs" />
 
                     <TextView
-                        android:layout_below="@+id/image11"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_below="@+id/image7"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="Gangadhar"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+
+
+                <RelativeLayout
+
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image8"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+
+                        android:src="@mipmap/hrijusha" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image8"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="Hrijusha"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+
+
+                <RelativeLayout
+
+
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image9"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+
+                        android:src="@mipmap/sweta" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image9"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="Sweta"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+
+
+                <RelativeLayout
+
+
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image10"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+                        android:src="@mipmap/natesh" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image10"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="12dp"
                         android:text="Natesh"
                         android:textColor="#6f6f6f"
@@ -516,23 +546,22 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
+
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image12"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
+                        android:id="@+id/image11"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-
-
-                        />
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+                        android:src="@mipmap/aquib" />
 
                     <TextView
-                        android:layout_below="@+id/image12"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_below="@+id/image11"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="12dp"
-                        android:text="Gangadhar"
+                        android:text="Aquib"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp" />
 
@@ -557,13 +586,56 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
+
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image13"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
+                        android:id="@+id/image12"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        />
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+
+
+                        android:src="@mipmap/krishnkant" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image12"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="Krishnkant"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+
+
+                <RelativeLayout
+
+
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image13"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+                        android:src="@mipmap/kundan" />
 
                     <TextView
                         android:layout_below="@+id/image13"
@@ -596,21 +668,22 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
+
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/image14"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        />
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+                        android:src="@mipmap/rohan" />
 
                     <TextView
-                        android:layout_below="@+id/image14"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_below="@+id/image14"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="12dp"
-                        android:text="Bhavani"
+                        android:text="Rohan"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp" />
 
@@ -634,21 +707,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 >
+
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/image15"
-                    android:layout_marginTop="16dp"
-                    android:layout_centerHorizontal="true"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    />
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:src="@mipmap/sonakshi" />
 
                 <TextView
-                    android:layout_below="@+id/image15"
-                    android:layout_centerHorizontal="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_below="@+id/image15"
+                    android:layout_centerHorizontal="true"
                     android:layout_marginTop="12dp"
-                    android:text="Aquib"
+                    android:text="Sonakshi"
                     android:textColor="#6f6f6f"
                     android:textSize="18sp" />
 
@@ -673,22 +747,23 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
+
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/image16"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
 
-                        />
+                        android:src="@mipmap/aditi" />
 
                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_below="@+id/image16"
                         android:layout_centerHorizontal="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="Rohan"
+                        android:text="Aditi"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp" />
 
@@ -713,21 +788,22 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
+
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/image17"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        />
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+                        android:src="@mipmap/amaan" />
 
                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_below="@+id/image17"
                         android:layout_centerHorizontal="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="Sweta"
+                        android:text="Amaan"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp" />
 
@@ -751,23 +827,24 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
+
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/image18"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
 
 
-                        />
+                        android:src="@mipmap/anand" />
 
                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_below="@+id/image18"
                         android:layout_centerHorizontal="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="Krishnkant"
+                        android:text="Anand"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp" />
 
@@ -792,22 +869,23 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
+
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/image19"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
 
-                        />
+                        android:src="@mipmap/asra" />
 
                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_below="@+id/image19"
                         android:layout_centerHorizontal="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="Hrijusha"
+                        android:text="Asra"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp" />
 
@@ -832,22 +910,23 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
+
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/image20"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
 
-                        />
+                        android:src="@mipmap/kaisar" />
 
                     <TextView
-                        android:layout_below="@+id/image20"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_below="@+id/image20"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="12dp"
-                        android:text="Sonakshi"
+                        android:text="Kaisar"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp" />
 
@@ -872,13 +951,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
+
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/image21"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        />
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+                        android:src="@mipmap/anurag" />
 
                     <TextView
                         android:layout_below="@+id/image21"
@@ -911,60 +991,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
+
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/image22"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
 
-                        />
+                        android:src="@mipmap/anushant" />
 
                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_below="@+id/image22"
                         android:layout_centerHorizontal="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Anand"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-
-
-                <RelativeLayout
-
-
-                    android:padding="16dp"
-                    android:layout_gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image23"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-
-                        />
-
-                    <TextView
-                        android:layout_below="@+id/image23"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
                         android:text="Anushant"
                         android:textColor="#6f6f6f"
@@ -985,142 +1026,27 @@
 
                 <RelativeLayout
 
-                    android:padding="16dp"
-                    android:layout_gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image24"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-
-                        />
-
-                    <TextView
-                        android:layout_below="@+id/image24"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Amaan"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-
-
-                <RelativeLayout
 
                     android:padding="16dp"
                     android:layout_gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
+
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image25"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
+                        android:id="@+id/image23"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        />
-
-                    <TextView
-                        android:layout_below="@+id/image25"
                         android:layout_centerHorizontal="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Aditi"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-
-
-                <RelativeLayout
-
-
-                    android:padding="16dp"
-                    android:layout_gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image26"
                         android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
 
-                        />
+                        android:src="@mipmap/chetan" />
 
                     <TextView
-                        android:layout_below="@+id/image26"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Asra"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-
-
-                <RelativeLayout
-
-
-                    android:padding="16dp"
-                    android:layout_gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image27"
-                        android:layout_marginTop="16dp"
+                        android:layout_below="@+id/image23"
                         android:layout_centerHorizontal="true"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        />
-
-                    <TextView
-                        android:layout_below="@+id/image27"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
                         android:text="Chetan"
                         android:textColor="#6f6f6f"
@@ -1141,27 +1067,28 @@
 
                 <RelativeLayout
 
-
                     android:padding="16dp"
                     android:layout_gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
+
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image28"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
+                        android:id="@+id/image24"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        />
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+
+                        android:src="@mipmap/manojana" />
 
                     <TextView
-                        android:layout_below="@+id/image28"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_below="@+id/image24"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="12dp"
-                        android:text="Astha"
+                        android:text="Manojhna"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp" />
 
@@ -1185,21 +1112,20 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
+
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image29"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
+                        android:id="@+id/image25"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-
-
-                        />
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+                        android:src="@mipmap/nikita" />
 
                     <TextView
-                        android:layout_below="@+id/image29"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_below="@+id/image25"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="12dp"
                         android:text="Nitika"
                         android:textColor="#6f6f6f"
@@ -1220,27 +1146,29 @@
 
                 <RelativeLayout
 
+
                     android:padding="16dp"
                     android:layout_gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
+
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image30"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
+                        android:id="@+id/image26"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
 
-                        />
+                        android:src="@mipmap/astha" />
 
                     <TextView
-                        android:layout_below="@+id/image30"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_below="@+id/image26"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="12dp"
-                        android:text="Raghav"
+                        android:text="Astha"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp" />
 
@@ -1265,21 +1193,20 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
+
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image31"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
+                        android:id="@+id/image27"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-
-
-                        />
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+                        android:src="@mipmap/saksham" />
 
                     <TextView
-                        android:layout_below="@+id/image31"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_below="@+id/image27"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="12dp"
                         android:text="Shaksham"
                         android:textColor="#6f6f6f"
@@ -1306,22 +1233,20 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
+
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image32"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
+                        android:id="@+id/image28"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-
-
-                        />
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+                        android:src="@mipmap/sandeep" />
 
                     <TextView
-
-                        android:layout_below="@+id/image32"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_below="@+id/image28"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="12dp"
                         android:text="Sandeep"
                         android:textColor="#6f6f6f"
@@ -1342,318 +1267,27 @@
 
                 <RelativeLayout
 
-
                     android:padding="16dp"
                     android:layout_gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
+
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image33"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
+                        android:id="@+id/image29"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-
-
-                        />
-
-                    <TextView
-
-                        android:layout_below="@+id/image33"
                         android:layout_centerHorizontal="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Swati Verma"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-
-
-                <RelativeLayout
-
-
-                    android:padding="16dp"
-                    android:layout_gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image34"
                         android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        />
+
+
+                        android:src="@mipmap/tanmay" />
 
                     <TextView
-
-                        android:layout_below="@+id/image34"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Manojna"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-
-
-                <RelativeLayout
-
-
-                    android:padding="16dp"
-                    android:layout_gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image35"
-                        android:layout_marginTop="16dp"
+                        android:layout_below="@+id/image29"
                         android:layout_centerHorizontal="true"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        />
-
-                    <TextView
-
-                        android:layout_below="@+id/image35"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Shivaneeth"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-
-
-                <RelativeLayout
-
-
-                    android:padding="16dp"
-                    android:layout_gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image36"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-
-                        />
-
-                    <TextView
-
-                        android:layout_below="@+id/image36"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Kaisar"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-
-
-                <RelativeLayout
-
-
-                    android:padding="16dp"
-                    android:layout_gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image37"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-
-                        />
-
-                    <TextView
-
-                        android:layout_below="@+id/image37"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Shikhar"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-
-
-                <RelativeLayout
-
-
-                    android:padding="16dp"
-                    android:layout_gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image38"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-
-
-
-                        />
-
-                    <TextView
-
-                        android:layout_below="@+id/image38"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Adiyta"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-
-
-                <RelativeLayout
-
-
-                    android:padding="16dp"
-                    android:layout_gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-
-                    >
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image39"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-
-
-                        />
-
-                    <TextView
-
-                        android:layout_below="@+id/image39"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Shagun"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-
-
-                <RelativeLayout
-
-
-                    android:padding="16dp"
-                    android:layout_gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image40"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-
-
-                        />
-
-                    <TextView
-
-                        android:layout_below="@+id/image40"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
                         android:text="Tanmay"
                         android:textColor="#6f6f6f"
@@ -1674,67 +1308,26 @@
 
                 <RelativeLayout
 
-
                     android:padding="16dp"
                     android:layout_gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
+
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image41"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
+                        android:id="@+id/image30"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-
-                        />
-
-                    <TextView
-
-                        android:layout_below="@+id/image41"
                         android:layout_centerHorizontal="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Srishti"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-
-
-                <RelativeLayout
-
-
-                    android:padding="16dp"
-                    android:layout_gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image42"
                         android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        />
+
+                        android:src="@mipmap/ansa" />
 
                     <TextView
-
-                        android:layout_below="@+id/image42"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_below="@+id/image30"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="12dp"
                         android:text="Ansa"
                         android:textColor="#6f6f6f"
@@ -1761,22 +1354,24 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
+
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image43"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
+                        android:id="@+id/image31"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        />
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+
+
+                        android:src="@mipmap/aman" />
 
                     <TextView
-
-                        android:layout_below="@+id/image43"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_below="@+id/image31"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="12dp"
-                        android:text="Rohit"
+                        android:text="Aman"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp" />
 
@@ -1801,21 +1396,66 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
+
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image44"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
+                        android:id="@+id/image32"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
 
-                        />
+
+                        android:src="@mipmap/bhakti" />
 
                     <TextView
 
-                        android:layout_below="@+id/image44"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_below="@+id/image32"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="Bhakti"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+
+
+                <RelativeLayout
+
+
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image33"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+
+
+                        android:src="@mipmap/chaya" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image33"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="12dp"
                         android:text="Chaya"
                         android:textColor="#6f6f6f"
@@ -1842,24 +1482,540 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
+
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image45"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
+                        android:id="@+id/image34"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        />
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+                        android:src="@mipmap/mehraj" />
 
                     <TextView
 
-                        android:layout_below="@+id/image45"
-                        android:layout_centerHorizontal="true"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_below="@+id/image34"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="Meghraj"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+
+
+                <RelativeLayout
+
+
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image35"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+                        android:src="@mipmap/sss" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image35"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="Shristi"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+
+
+                <RelativeLayout
+
+
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image36"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+
+                        android:src="@mipmap/rohit" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image36"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="Rohit"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+
+
+                <RelativeLayout
+
+
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image37"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+
+                        android:src="@mipmap/rohan_r" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image37"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="12dp"
                         android:text="Rohan"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+
+
+                <RelativeLayout
+
+
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image38"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+
+
+                        android:src="@mipmap/shagun" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image38"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="Shagun"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+
+
+                <RelativeLayout
+
+
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image39"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+
+
+                        android:src="@mipmap/sashvat" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image39"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="Sashwat"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+
+
+                <RelativeLayout
+
+
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image40"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+
+
+                        android:src="@drawable/arghy" />
+
+                    <TextView
+
+                        android:id="@+id/argh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image40"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="Arghyadeep"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/argh"
+                        android:layout_centerHorizontal="true"
+                        android:text="Senior Member" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+
+
+                <RelativeLayout
+
+
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image41"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+
+                        android:src="@mipmap/rahul" />
+
+                    <TextView
+                        android:id="@+id/rah"
+                        android:layout_below="@+id/image41"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Rahul"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rah"
+                        android:layout_centerHorizontal="true"
+                        android:text="Senior Member" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+
+
+                <RelativeLayout
+
+
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image42"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+                        android:src="@mipmap/ankit" />
+
+                    <TextView
+
+                        android:id="@+id/ank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image42"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="Ankit"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ank"
+                        android:layout_centerHorizontal="true"
+                        android:text="Senior Member" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+
+
+                <RelativeLayout
+
+
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image43"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+                        android:src="@mipmap/dhanush" />
+
+                    <TextView
+
+                        android:id="@+id/dha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image43"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="Dhanush"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dha"
+                        android:layout_centerHorizontal="true"
+                        android:text="Senior Member" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+
+
+                <RelativeLayout
+
+
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image44"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+
+                        android:src="@mipmap/jeeva" />
+
+                    <TextView
+
+                        android:id="@+id/jee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image44"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="Jeeva"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/jee"
+                        android:layout_centerHorizontal="true"
+                        android:text="Senior Member" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+
+
+                <RelativeLayout
+
+
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image45"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+                        android:src="@mipmap/xyz" />
+
+                    <TextView
+
+                        android:id="@+id/swa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image45"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="Swati"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/swa"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView" />
 
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
@@ -1893,15 +2049,23 @@
                         />
 
                     <TextView
-
-                        android:layout_below="@+id/image46"
-                        android:layout_centerHorizontal="true"
+                        android:id="@+id/far"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_below="@+id/image46"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="12dp"
-                        android:text="Aman"
+                        android:text="Farhan"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/far"
+                        android:layout_centerHorizontal="true"
+                        android:text="Senior Member" />
 
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
@@ -1935,262 +2099,27 @@
 
                     <TextView
 
+                        android:id="@+id/ash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_below="@+id/image47"
                         android:layout_centerHorizontal="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="Shashwat"
+                        android:text="Ashish"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp" />
-
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-
-
-                <RelativeLayout
-
-
-                    android:padding="16dp"
-                    android:layout_gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image48"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-
-                        />
 
                     <TextView
-
-                        android:layout_below="@+id/image48"
-                        android:layout_centerHorizontal="true"
+                        android:id="@+id/textView18"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Meghraj"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-
-
-                <RelativeLayout
-
-
-                    android:padding="16dp"
-                    android:layout_gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image49"
-                        android:layout_marginTop="16dp"
+                        android:layout_below="@+id/ash"
                         android:layout_centerHorizontal="true"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-
-                        />
-
-                    <TextView
-
-                        android:layout_below="@+id/image49"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Anshuman"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-
-
-                <RelativeLayout
-
-
-                    android:padding="16dp"
-                    android:layout_gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image50"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-
-                        />
-
-                    <TextView
-
-                        android:layout_below="@+id/image50"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Bhakti"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-
-
-                <RelativeLayout
-
-
-                    android:padding="16dp"
-                    android:layout_gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image51"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-
-                        />
-
-                    <TextView
-
-                        android:layout_below="@+id/image51"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Bit"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-
-
-                <RelativeLayout
-
-
-                    android:padding="16dp"
-                    android:layout_gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image52"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        />
-
-                    <TextView
-
-                        android:layout_below="@+id/image52"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Bit"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
+                        android:text="TextView" />
 
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
 
-            <android.support.v7.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-
-
-                <RelativeLayout
-
-
-                    android:padding="16dp"
-                    android:layout_gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image53"
-                        android:layout_marginTop="16dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        />
-
-                    <TextView
-
-                        android:layout_below="@+id/image53"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Bit"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
 
 
         </GridLayout>

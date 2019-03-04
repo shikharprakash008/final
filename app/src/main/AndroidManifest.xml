@@ -56,7 +56,11 @@
         <activity android:name=".RoboRash" />
         <activity android:name=".PaperPresenation" />
         <activity android:name=".RoboSoccer" />
-        <activity android:name=".Dcode"></activity>
+        <activity android:name=".Dcode" />
+        <activity android:name=".Pop"
+            android:theme="@style/AppTheme.CustomTheme">
+
+        </activity>
     </application>
 
 </manifest>

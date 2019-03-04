@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity
     }
     else if (id==R.id.Location)
         {
-            Uri gmmIntentUri = Uri.parse("geo:37.7749,-122.4194");
+            Uri gmmIntentUri = Uri.parse("geo:13.3269° N, 77.1261° E");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
             if (mapIntent.resolveActivity(getPackageManager()) != null) {

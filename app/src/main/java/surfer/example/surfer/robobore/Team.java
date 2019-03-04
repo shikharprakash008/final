@@ -1,7 +1,9 @@
 package surfer.example.surfer.robobore;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
@@ -9,64 +11,22 @@ import com.bumptech.glide.Glide;
 public class Team extends AppCompatActivity {
     ImageView m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19, m20, m21, m22, m23, m24, m25, m26, m27, m28, m29, m30;
     ImageView m31, m32, m33, m34, m35, m36, m37, m38, m39, m40, m41, m42, m43, m44, m45, m46, m47, m48, m49, m50, m51, m52, m53;
-
+ImageView imageView1;
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_team);
-        m1= findViewById(R.id.image1);
-        m2=findViewById(R.id.image2);
-        m3=findViewById(R.id.image3);
-        m4=findViewById(R.id.image4);
-        m5=findViewById(R.id.image5);
-        m6=findViewById(R.id.image6);
-        m7=findViewById(R.id.image7);
-        m8=findViewById(R.id.image8);
-        m9=findViewById(R.id.image9);
-        m10=findViewById(R.id.image10);
-        m11=findViewById(R.id.image11);
-        m12=findViewById(R.id.image12);
-        m13=findViewById(R.id.image13);
-        m14=findViewById(R.id.image14);
-        m15=findViewById(R.id.image15);
-        m16=findViewById(R.id.image16);
-        m17=findViewById(R.id.image17);
-        m18=findViewById(R.id.image18);
-        m19=findViewById(R.id.image19);
-        m20=findViewById(R.id.image21);
-        m21=findViewById(R.id.image22);
-        m22=findViewById(R.id.image23);
-        m24=findViewById(R.id.image24);
-        m25=findViewById(R.id.image25);
-        m26=findViewById(R.id.image26);
-        m27=findViewById(R.id.image27);
-        m28=findViewById(R.id.image28);
-        m29=findViewById(R.id.image29);
-        m30=findViewById(R.id.image30);
-        m31=findViewById(R.id.image31);
-        m32=findViewById(R.id.image32);
-        m33=findViewById(R.id.image33);
-        m34=findViewById(R.id.image34);
-        m35=findViewById(R.id.image35);
-        m36=findViewById(R.id.image36);
-        m37=findViewById(R.id.image37);
-        m38=findViewById(R.id.image38);
-        m39=findViewById(R.id.image39);
-        m40=findViewById(R.id.image40);
-        m41=findViewById(R.id.image41);
-        m42=findViewById(R.id.image42);
-        m43=findViewById(R.id.image43);
-        m44=findViewById(R.id.image44);
-        m45=findViewById(R.id.image45);
-        m46=findViewById(R.id.image46);
-        m47=findViewById(R.id.image47);
-        m48=findViewById(R.id.image48);
-        m49=findViewById(R.id.image49);
-        m50=findViewById(R.id.image50);
-        m51=findViewById(R.id.image51);
-        m52=findViewById(R.id.image52);
-        m53=findViewById(R.id.image53);
+        imageView1=findViewById(R.id.imageView2);
 
+
+  imageView1.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+          Intent i= new Intent(Team.this,MainActivity.class);
+          startActivity(i);
+      }
+  });
   /*      String url="https://firebasestorage.googleapis.com/v0/b/robocore-bf107.appspot.com/o/arghy.jpg?alt=media&token=1ca40532-3156-4d9e-81f4-68078bf287b5";
         String url1="https://firebasestorage.googleapis.com/v0/b/robocore-bf107.appspot.com/o/rahul.jpg?alt=media&token=16e1f446-8a9c-41ea-96e2-c9f4e257067b";
         String url2="https://firebasestorage.googleapis.com/v0/b/robocore-bf107.appspot.com/o/jeeva.jpg?alt=media&token=e049d9b4-aca3-4834-981d-708f3470916a";

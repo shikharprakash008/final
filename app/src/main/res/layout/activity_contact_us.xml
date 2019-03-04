@@ -50,7 +50,7 @@
             android:layout_marginBottom="39dp"
             android:fontFamily="@font/audiowide"
             android:text="ROBOCORE 19"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/white"
             android:textSize="25sp" />
     </RelativeLayout>
 
@@ -108,6 +108,8 @@
         android:layout_marginTop="159dp"
         android:text="PLEASE FEEL FREE TO CONTACT US REGARDING ANY DOUBTS OR CONFUSION"
         android:textSize="25sp"
+        android:textColor="@color/black"
         android:textStyle="bold" />
+
 
 </RelativeLayout>
