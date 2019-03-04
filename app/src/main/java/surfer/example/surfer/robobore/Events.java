@@ -13,7 +13,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class Events extends AppCompatActivity {
 ImageView imageView;
-CircleImageView circleImageView,circleImageView2;
+ImageView circleImageView,circleImageView2;
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {

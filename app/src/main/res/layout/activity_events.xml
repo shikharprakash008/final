@@ -60,7 +60,7 @@
       android:fontFamily="cursive"
       android:textColor="@color/black"/>
 
-            <de.hdodenhof.circleimageview.CircleImageView
+            <ImageView
                 android:id="@+id/image1"
 
                 android:layout_width="250dp"
@@ -72,9 +72,9 @@
                 android:layout_marginRight="70dp"
                 android:layout_marginTop="8dp"
                 android:padding="10dp"
-                android:src="@drawable/hac">
+                android:src="@mipmap/dayone">
 
-            </de.hdodenhof.circleimageview.CircleImageView>
+            </ImageView>
 
             <TextView
                 android:id="@+id/text2"
@@ -88,7 +88,7 @@
                 android:fontFamily="cursive"
                 android:text="ROBOTHON (DAY 2)"/>
 
-            <de.hdodenhof.circleimageview.CircleImageView
+            <ImageView
 
                 android:id="@+id/image2"
                 android:padding="10dp"
@@ -97,7 +97,7 @@
                 android:layout_marginLeft="70dp"
                 android:layout_below="@+id/text2"
                 android:layout_marginTop="12dp"
-                android:src="@drawable/lightbox"
+                android:src="@mipmap/dattwo"
                 android:layout_width="250dp"
                 android:layout_height="250dp" />
         </RelativeLayout>
