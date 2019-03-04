@@ -57,10 +57,18 @@
         <activity android:name=".PaperPresenation" />
         <activity android:name=".RoboSoccer" />
         <activity android:name=".Dcode" />
-        <activity android:name=".Pop"
-            android:theme="@style/AppTheme.CustomTheme">
-
-        </activity>
+        <activity
+            android:name=".Pop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity android:name=".prob2" />
+        <activity android:name=".prob3" />
+        <activity android:name=".prob4" />
+        <activity android:name=".prob5" />
+        <activity android:name=".prob6" />
+        <activity android:name=".prob7" />
+        <activity android:name=".prob8" />
+        <activity android:name=".prob9" />
+        <activity android:name=".prob10"></activity>
     </application>
 
 </manifest>

@@ -140,7 +140,7 @@
               android:hint="College"/>
 
           <TextView
-              android:id="@+id/text2"
+              android:id="@+id/prob_name"
                 android:text="Contact Details"
               android:gravity="center"
               android:textStyle="bold"
@@ -152,7 +152,7 @@
               android:layout_height="wrap_content" />
 
          <EditText
-          android:layout_below="@+id/text2"
+          android:layout_below="@+id/prob_name"
           android:gravity="center"
           android:padding="10dp"
           android:id="@+id/edi8"

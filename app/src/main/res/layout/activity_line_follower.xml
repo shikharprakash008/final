@@ -57,7 +57,7 @@
         android:textSize="18sp"
         android:textColor="@color/black"/>
     <TextView
-        android:id="@+id/text2"
+        android:id="@+id/prob_name"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -69,7 +69,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"/>
     <TextView
-        android:layout_below="@+id/text2"
+        android:layout_below="@+id/prob_name"
         android:layout_marginTop="15dp"
         android:text="
 
@@ -86,7 +86,7 @@
         android:textSize="14sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text3"/>
+        android:id="@+id/prob_desc"/>
 
     <Button
         android:text="REGISTER"
@@ -94,7 +94,7 @@
         android:id="@+id/button"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text3"
+        android:layout_below="@+id/prob_desc"
         android:layout_alignParentStart="true"
         android:layout_marginStart="112dp"
         android:layout_marginTop="20dp"

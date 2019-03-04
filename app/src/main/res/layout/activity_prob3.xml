@@ -6,17 +6,17 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_contact"
     tools:context=".Pop">
-<TextView
-    android:id="@+id/text"
-android:layout_marginTop="50dp"
-    android:text="Problem Statement"
-    android:textColor="@color/white"
-    android:gravity="center"
-    android:textStyle="bold"
-    android:textSize="30sp"
-    android:textAllCaps="true"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/text"
+        android:layout_marginTop="50dp"
+        android:text="Problem Statement"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textAllCaps="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
     <TextView
         android:id="@+id/text1"
         android:text="---------------------------------------------------"
@@ -36,7 +36,7 @@ android:layout_marginTop="50dp"
         android:layout_below="@+id/text1"
         android:layout_marginTop="40dp"
         android:gravity="center"
-        android:text="Eye for blind"
+        android:text="Habbit Monitoring Robot"
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold" />
@@ -48,7 +48,7 @@ android:layout_marginTop="50dp"
         android:layout_below="@+id/prob_name"
         android:layout_marginTop="40dp"
         android:gravity="center"
-        android:text="A bot that helps the blind people detect colour and basic shapes."
+        android:text="An app or bot that helps you monitor how much time you're spending on gaming ,social and studies and helps you improve your good habits."
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold" />

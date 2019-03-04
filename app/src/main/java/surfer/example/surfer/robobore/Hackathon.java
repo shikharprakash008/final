@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.nio.InvalidMarkException;
 import java.nio.channels.InterruptedByTimeoutException;
@@ -17,6 +18,7 @@ ImageView imageView11,imageView12,imageView13,imageView14,imageView16,imageView1
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hackathon);
+        final TextView prob1=(TextView)findViewById(R.id.prob1);
         imageView=findViewById(R.id.imageView4);
         imageView1=findViewById(R.id.image1);
         imageView2=findViewById(R.id.image2);
@@ -50,66 +52,67 @@ ImageView imageView11,imageView12,imageView13,imageView14,imageView16,imageView1
             @Override
             public void onClick(View v) {
              Intent pop =new Intent(Hackathon.this,Pop.class);
+                getIntent().putExtra("prob1",prob1.getText().toString());
              startActivity(pop);
             }
         });
         imageView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent pop =new Intent(Hackathon.this,Pop.class);
+                Intent pop =new Intent(Hackathon.this,prob2.class);
                 startActivity(pop);
             }
         });
         imageView4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent pop =new Intent(Hackathon.this,Pop.class);
+                Intent pop =new Intent(Hackathon.this,prob3.class);
                 startActivity(pop);
             }
         });
         imageView5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent pop =new Intent(Hackathon.this,Pop.class);
+                Intent pop =new Intent(Hackathon.this,prob4.class);
                 startActivity(pop);
             }
         });imageView6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent pop =new Intent(Hackathon.this,Pop.class);
+                Intent pop =new Intent(Hackathon.this,prob5.class);
                 startActivity(pop);
             }
         });
         imageView7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent pop =new Intent(Hackathon.this,Pop.class);
+                Intent pop =new Intent(Hackathon.this,prob6.class);
                 startActivity(pop);
             }
         });imageView8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent pop =new Intent(Hackathon.this,Pop.class);
+                Intent pop =new Intent(Hackathon.this,prob7.class);
                 startActivity(pop);
             }
         });
         imageView9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent pop =new Intent(Hackathon.this,Pop.class);
+                Intent pop =new Intent(Hackathon.this,prob8.class);
                 startActivity(pop);
             }
         });imageView10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent pop =new Intent(Hackathon.this,Pop.class);
+                Intent pop =new Intent(Hackathon.this,prob9.class);
                 startActivity(pop);
             }
         });
         imageView11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent pop =new Intent(Hackathon.this,Pop.class);
+                Intent pop =new Intent(Hackathon.this,prob10.class);
                 startActivity(pop);
             }
         });
