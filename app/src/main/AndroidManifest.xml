@@ -57,86 +57,67 @@
         <activity android:name=".PaperPresenation" />
         <activity android:name=".RoboSoccer" />
         <activity android:name=".Dcode" />
-        <activity android:name=".Pop"
-            android:theme="@style/AppTheme.CustomTheme">
-
-        </activity>
-        <activity android:name=".prob2"
-            android:theme="@style/AppTheme.CustomTheme">
-
-        </activity>
-        <activity android:name=".prob3"
-            android:theme="@style/AppTheme.CustomTheme">
-
-        </activity>
-        <activity android:name=".prob4"
-            android:theme="@style/AppTheme.CustomTheme">
-
-        </activity>
-        <activity android:name=".prob5"
-            android:theme="@style/AppTheme.CustomTheme">
-
-        </activity>
-        <activity android:name=".prob6"
-            android:theme="@style/AppTheme.CustomTheme">
-
-        </activity>
-        <activity android:name=".prob7"
-            android:theme="@style/AppTheme.CustomTheme">
-
-        </activity>
-        <activity android:name=".prob8"
-            android:theme="@style/AppTheme.CustomTheme">
-
-        </activity>
-        <activity android:name=".prob9"
-            android:theme="@style/AppTheme.CustomTheme">
-
-        </activity>
-        <activity android:name=".prob10"
-            android:theme="@style/AppTheme.CustomTheme">
-
-        </activity>
-        <activity android:name=".PowEleven"
-            android:theme="@style/AppTheme.CustomTheme">
-
-        </activity>
-        <activity android:name=".PopTweleve"
-            android:theme="@style/AppTheme.CustomTheme">
-
-        </activity>
-        <activity android:name=".Popthirteen"
-            android:theme="@style/AppTheme.CustomTheme">
-
-        </activity>
-        <activity android:name=".Pop14"
-            android:theme="@style/AppTheme.CustomTheme">
-
-        </activity>
-        <activity android:name=".Pop15"
-            android:theme="@style/AppTheme.CustomTheme">
-
-        </activity>
-        <activity android:name=".Pop16"
-            android:theme="@style/AppTheme.CustomTheme">
-
-        </activity>
-        <activity android:name=".Pop17"
-            android:theme="@style/AppTheme.CustomTheme">
-
-        </activity>
-        <activity android:name=".Pop18"
-            android:theme="@style/AppTheme.CustomTheme">
-
-        </activity>
-        <activity android:name=".Pop19"
-            android:theme="@style/AppTheme.CustomTheme">
-
-        </activity>
-        <activity android:name=".Pop20"
-            android:theme="@style/AppTheme.CustomTheme">
-
-        </activity>
+        <activity
+            android:name=".Pop"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
+        <activity
+            android:name=".prob2"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
+        <activity
+            android:name=".prob3"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
+        <activity
+            android:name=".prob4"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
+        <activity
+            android:name=".prob5"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
+        <activity
+            android:name=".prob6"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
+        <activity
+            android:name=".prob7"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
+        <activity
+            android:name=".prob8"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
+        <activity
+            android:name=".prob9"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
+        <activity
+            android:name=".prob10"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
+        <activity
+            android:name=".PowEleven"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
+        <activity
+            android:name=".PopTweleve"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
+        <activity
+            android:name=".Popthirteen"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
+        <activity
+            android:name=".Pop14"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
+        <activity
+            android:name=".Pop15"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
+        <activity
+            android:name=".Pop16"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
+        <activity
+            android:name=".Pop17"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
+        <activity
+            android:name=".Pop18"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
+        <activity
+            android:name=".Pop19"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
+        <activity
+            android:name=".Pop20"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
+        <activity android:name=".Robothon"></activity>
     </application>
 
 </manifest>

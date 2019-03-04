@@ -33,7 +33,7 @@ ImageView circleImageView,circleImageView2;
         circleImageView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent hack= new Intent(Events.this,Hackathon.class);
+                Intent hack= new Intent(Events.this,Robothon.class);
                 startActivity(hack);
             }
         });
