@@ -13,7 +13,7 @@ import java.nio.channels.InterruptedByTimeoutException;
 
 public class Hackathon extends AppCompatActivity {
 ImageView imageView,imageView1,imageView2,imageView4,imageView5,imageView6,imageView7,imageView8,imageView9,imageView10;
-ImageView imageView11,imageView12,imageView13,imageView14,imageView16,imageView15,imageView17,imageView18,imageView19,imageView20,imageView21;
+ImageView imageView22,imageView11,imageView12,imageView13,imageView14,imageView16,imageView15,imageView17,imageView18,imageView19,imageView20,imageView21;
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +40,7 @@ ImageView imageView11,imageView12,imageView13,imageView14,imageView16,imageView1
         imageView19=findViewById(R.id.image19);
         imageView20=findViewById(R.id.image20);
         imageView21=findViewById(R.id.image21);
+        imageView22=findViewById(R.id.image22);
 
 
 
@@ -51,7 +52,7 @@ ImageView imageView11,imageView12,imageView13,imageView14,imageView16,imageView1
 
                 Intent i = new Intent(Hackathon.this,Events.class);
             startActivity(i);
-                finish();
+//                finish();
             }
 
         });
@@ -61,7 +62,7 @@ ImageView imageView11,imageView12,imageView13,imageView14,imageView16,imageView1
              Intent pop =new Intent(Hackathon.this,Pop.class);
                 getIntent().putExtra("prob1",prob1.getText().toString());
              startActivity(pop);
-                finish();
+//                finish();
             }
         });
         imageView2.setOnClickListener(new View.OnClickListener() {
@@ -69,7 +70,7 @@ ImageView imageView11,imageView12,imageView13,imageView14,imageView16,imageView1
             public void onClick(View v) {
                 Intent pop =new Intent(Hackathon.this,prob2.class);
                 startActivity(pop);
-                finish();
+//                finish();
             }
         });
         imageView4.setOnClickListener(new View.OnClickListener() {
@@ -84,14 +85,14 @@ ImageView imageView11,imageView12,imageView13,imageView14,imageView16,imageView1
             public void onClick(View v) {
                 Intent pop =new Intent(Hackathon.this,prob4.class);
                 startActivity(pop);
-                finish();
+//                finish();
             }
         });imageView6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent pop =new Intent(Hackathon.this,prob5.class);
                 startActivity(pop);
-                finish();
+//                finish();
             }
         });
         imageView7.setOnClickListener(new View.OnClickListener() {
@@ -99,14 +100,14 @@ ImageView imageView11,imageView12,imageView13,imageView14,imageView16,imageView1
             public void onClick(View v) {
                 Intent pop =new Intent(Hackathon.this,prob6.class);
                 startActivity(pop);
-                finish();
+//                finish();
             }
         });imageView8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent pop =new Intent(Hackathon.this,prob7.class);
                 startActivity(pop);
-                finish();
+//                finish();
             }
         });
         imageView9.setOnClickListener(new View.OnClickListener() {
@@ -114,14 +115,14 @@ ImageView imageView11,imageView12,imageView13,imageView14,imageView16,imageView1
             public void onClick(View v) {
                 Intent pop =new Intent(Hackathon.this,prob8.class);
                 startActivity(pop);
-                finish();
+//                finish();
             }
         });imageView10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent pop =new Intent(Hackathon.this,prob9.class);
                 startActivity(pop);
-                finish();
+//                finish();
             }
         });
         imageView11.setOnClickListener(new View.OnClickListener() {
@@ -129,7 +130,7 @@ ImageView imageView11,imageView12,imageView13,imageView14,imageView16,imageView1
             public void onClick(View v) {
                 Intent pop =new Intent(Hackathon.this,prob10.class);
                 startActivity(pop);
-                finish();
+//                finish();
             }
         });
 
@@ -138,7 +139,7 @@ ImageView imageView11,imageView12,imageView13,imageView14,imageView16,imageView1
             public void onClick(View v) {
                 Intent pop =new Intent(Hackathon.this,PowEleven.class);
                 startActivity(pop);
-                finish();
+//                finish();
             }
         });
         imageView13.setOnClickListener(new View.OnClickListener() {
@@ -146,7 +147,7 @@ ImageView imageView11,imageView12,imageView13,imageView14,imageView16,imageView1
             public void onClick(View v) {
                 Intent pop =new Intent(Hackathon.this,PopTweleve.class);
                 startActivity(pop);
-                finish();
+//                finish();
             }
         });
         imageView14.setOnClickListener(new View.OnClickListener() {
@@ -154,7 +155,7 @@ ImageView imageView11,imageView12,imageView13,imageView14,imageView16,imageView1
             public void onClick(View v) {
                 Intent pop =new Intent(Hackathon.this,Popthirteen.class);
                 startActivity(pop);
-                finish();
+//                finish();
             }
         });
         imageView15.setOnClickListener(new View.OnClickListener() {
@@ -162,7 +163,7 @@ ImageView imageView11,imageView12,imageView13,imageView14,imageView16,imageView1
             public void onClick(View v) {
                 Intent pop =new Intent(Hackathon.this,Pop14.class);
                 startActivity(pop);
-                finish();
+//                finish();
             }
         });
         imageView16.setOnClickListener(new View.OnClickListener() {
@@ -170,7 +171,7 @@ ImageView imageView11,imageView12,imageView13,imageView14,imageView16,imageView1
             public void onClick(View v) {
                 Intent pop =new Intent(Hackathon.this,Pop15.class);
                 startActivity(pop);
-                finish();
+//                finish();
             }
         });
         imageView17.setOnClickListener(new View.OnClickListener() {
@@ -178,7 +179,7 @@ ImageView imageView11,imageView12,imageView13,imageView14,imageView16,imageView1
             public void onClick(View v) {
                 Intent pop =new Intent(Hackathon.this,Pop16.class);
                 startActivity(pop);
-                finish();
+//                finish();
             }
         });
         imageView18.setOnClickListener(new View.OnClickListener() {
@@ -186,7 +187,7 @@ ImageView imageView11,imageView12,imageView13,imageView14,imageView16,imageView1
             public void onClick(View v) {
                 Intent pop =new Intent(Hackathon.this,Pop17.class);
                 startActivity(pop);
-                finish();
+//                finish();
             }
         });
         imageView19.setOnClickListener(new View.OnClickListener() {
@@ -194,7 +195,7 @@ ImageView imageView11,imageView12,imageView13,imageView14,imageView16,imageView1
             public void onClick(View v) {
                 Intent pop =new Intent(Hackathon.this,Pop18.class);
                 startActivity(pop);
-                finish();
+//                finish();
             }
         });
         imageView20.setOnClickListener(new View.OnClickListener() {
@@ -202,7 +203,7 @@ ImageView imageView11,imageView12,imageView13,imageView14,imageView16,imageView1
             public void onClick(View v) {
                 Intent pop =new Intent(Hackathon.this,Pop19.class);
                 startActivity(pop);
-                finish();
+//                finish();
             }
         });
         imageView21.setOnClickListener(new View.OnClickListener() {
@@ -210,7 +211,15 @@ ImageView imageView11,imageView12,imageView13,imageView14,imageView16,imageView1
             public void onClick(View v) {
                 Intent pop =new Intent(Hackathon.this,Pop20.class);
                 startActivity(pop);
-                finish();
+//                finish();
+            }
+        });
+        imageView22.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent pop =new Intent(Hackathon.this,pop22.class);
+                startActivity(pop);
+//                finish();
             }
         });
 

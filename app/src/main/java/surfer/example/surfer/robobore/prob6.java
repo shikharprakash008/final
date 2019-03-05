@@ -26,7 +26,7 @@ public class prob6 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent browse = new Intent(Intent.ACTION_VIEW);
-                browse.setData(Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLSci_XNrkPl9w0ZPC0Mj2p-Q22AC-P8TdX24s8e8UJzLfvZ-Kg/viewform?usp=pp_url"));
+                browse.setData(Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLSd6DGBoUf-t_AFjx-JCXBGbB--ZwjySlZPm0JBGg3X2nM4SAQ/viewform?usp=pp_url"));
                 startActivity(browse);
             }
         });

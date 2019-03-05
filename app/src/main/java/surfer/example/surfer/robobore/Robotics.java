@@ -29,7 +29,7 @@ CircleImageView imageView1,imageView2,imageView3,imageView4,imageView5,imageView
             public void onClick(View v) {
                 Intent r=new Intent(Robotics.this,CrossRoads.class);
                 startActivity(r);
-                finish();
+               // finish();
             }
         });
         imageView3.setOnClickListener(new View.OnClickListener() {
@@ -37,7 +37,7 @@ CircleImageView imageView1,imageView2,imageView3,imageView4,imageView5,imageView
             public void onClick(View v) {
                 Intent r=new Intent(Robotics.this,RoboRash.class);
                 startActivity(r);
-                finish();
+                //finish();
             }
         });
         imageView4.setOnClickListener(new View.OnClickListener() {
@@ -45,7 +45,7 @@ CircleImageView imageView1,imageView2,imageView3,imageView4,imageView5,imageView
             public void onClick(View v) {
                 Intent r=new Intent(Robotics.this,PaperPresenation.class);
                 startActivity(r);
-                finish();
+                //finish();
             }
         });
         imageView5.setOnClickListener(new View.OnClickListener() {
@@ -53,7 +53,7 @@ CircleImageView imageView1,imageView2,imageView3,imageView4,imageView5,imageView
             public void onClick(View v) {
                 Intent r=new Intent(Robotics.this,RoboSoccer.class);
                 startActivity(r);
-                finish();
+                //finish();
             }
         });
         imageView6.setOnClickListener(new View.OnClickListener() {
@@ -61,7 +61,7 @@ CircleImageView imageView1,imageView2,imageView3,imageView4,imageView5,imageView
             public void onClick(View v) {
                 Intent r=new Intent(Robotics.this,Dcode.class);
                 startActivity(r);
-                finish();
+               //finish();
             }
         });
         imageView1.setOnClickListener(new View.OnClickListener() {
@@ -69,7 +69,7 @@ CircleImageView imageView1,imageView2,imageView3,imageView4,imageView5,imageView
             public void onClick(View v) {
                 Intent line=new Intent(Robotics.this,LineFollower.class);
                 startActivity(line);
-                finish();
+               // finish();
             }
         });
         imageView.setOnClickListener(new View.OnClickListener() {
@@ -77,7 +77,7 @@ CircleImageView imageView1,imageView2,imageView3,imageView4,imageView5,imageView
             public void onClick(View v) {
                 Intent back = new Intent(Robotics.this,Events.class);
                 startActivity(back);
-                finish();
+               // finish();
             }
         });
     }
