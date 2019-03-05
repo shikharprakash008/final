@@ -32,7 +32,7 @@ ImageView imageView;
             @Override
             public void onClick(View v) {
                 Intent browse = new Intent(Intent.ACTION_VIEW);
-                browse.setData(Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLSfeJZ7aO4eo3FzkTV6EI5Byc993o1VYSefmoEXSQVwTjLmAjA/viewform?usp=pp_url"));
+                browse.setData(Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLSc67pN7FwTc3z_W_shNb7UJG2eCa61zAe3lYi63FqUbqOn7xQ/viewform?usp=pp_url"));
                 startActivity(browse);
             }
         });
