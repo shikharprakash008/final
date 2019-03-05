@@ -17,12 +17,13 @@ Button button;
         setContentView(R.layout.activity_dcode);
         button=findViewById(R.id.button);
         imageView=findViewById(R.id.imageView4);
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 Intent browse = new Intent(Intent.ACTION_VIEW);
-                browse.setData(Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLScSzRAauM6GVHGRT-KWq3WUw6MX4Q895InFBHDG9aom4blf2Q/viewform?usp=pp_url"));
+                browse.setData(Uri.parse("https://drive.google.com/file/d/1WTCbJKK7HWHZk3ZzZ8PJJoro45PJ-u40/view?usp=sharing"));
                 startActivity(browse);
 
             }
@@ -35,5 +36,17 @@ Button button;
                 finish();
             }
         });
+
+        Button button1=findViewById(R.id.button1);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent browse = new Intent(Intent.ACTION_VIEW);
+                browse.setData(Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLScCLmt_K4710F13sFczLeGmqCx_aAU5e1BSxupxjuPJRLQUow/viewform?usp=pp_url"));
+                startActivity(browse);
+            }
+        });
+
+
     }
 }
