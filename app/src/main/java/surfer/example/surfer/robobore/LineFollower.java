@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 public class LineFollower extends AppCompatActivity {
-Button button;
+Button button,button1;
 ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +18,7 @@ ImageView imageView;
         setContentView(R.layout.activity_line_follower);
 
         button=findViewById(R.id.button);
+        button1=findViewById(R.id.button1);
         imageView=findViewById(R.id.imageView4);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,6 +28,14 @@ ImageView imageView;
             }
         });
         button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent browse = new Intent(Intent.ACTION_VIEW);
+                browse.setData(Uri.parse("https://drive.google.com/file/d/1WTCbJKK7HWHZk3ZzZ8PJJoro45PJ-u40/view?usp=sharing"));
+                startActivity(browse);
+            }
+        });
+        button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent browse = new Intent(Intent.ACTION_VIEW);
