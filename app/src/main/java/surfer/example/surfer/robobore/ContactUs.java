@@ -54,7 +54,6 @@ public class ContactUs extends AppCompatActivity {
                 Intent browse = new Intent(Intent.ACTION_VIEW);
                 browse.setData(Uri.parse("http://www.corsit.in/"));
                 startActivity(browse);
-                finish();
             }
         });
         button1.setOnClickListener(new View.OnClickListener() {
