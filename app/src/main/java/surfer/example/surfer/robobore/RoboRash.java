@@ -11,12 +11,12 @@ import android.widget.ImageView;
 public class RoboRash extends AppCompatActivity {
 Button button;
 ImageView imageView;
-    Button button1=findViewById(R.id.button1);
+  ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_robo_rash);
-
+        Button button1=findViewById(R.id.button1);
         button=findViewById(R.id.button);
         imageView=findViewById(R.id.imageView4);
 

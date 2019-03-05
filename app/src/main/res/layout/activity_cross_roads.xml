@@ -68,38 +68,57 @@
                 android:textStyle="bold"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"/>
-            <TextView
-                android:layout_below="@+id/prob_name"
-                android:layout_marginTop="15dp"
-                android:text="
+        <Button
+            android:id="@+id/button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prob_name"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:text="Download Rule Book"
+            android:textColor="@color/black" />
 
+        <TextView
+            android:id="@+id/text2"
+            android:text="Register:"
+            android:layout_below="@+id/button"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please pay to this number 8310351715 through UPI
+(Google Pay,PhonePE,BHIM,PAYTM)\n\n
 
-
-
-
-
-
-
-
+Dont forget to take the screenshot after the payment.\n\n
+After completing the payment process click the button below to complete the registration.
 "
-                android:textStyle="bold"
-                android:textSize="14sp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/prob_desc"/>
-
-            <Button
-                android:text="REGISTER"
-                android:textColor="@color/black"
-                android:id="@+id/button"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/prob_desc"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="112dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/rounded_button"
-                android:gravity="center" />
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:layout_below="@+id/text2"/>
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text3"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:text="REGISTER"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black" />
         </RelativeLayout>
+
     </LinearLayout>
 </ScrollView>
