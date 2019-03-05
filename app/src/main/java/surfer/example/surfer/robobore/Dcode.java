@@ -1,6 +1,7 @@
 package surfer.example.surfer.robobore;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,8 +20,9 @@ Button button;
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent reg= new Intent(Dcode.this,StudentRegistartion.class);
-                startActivity(reg);
+                Intent browse = new Intent(Intent.ACTION_VIEW);
+                browse.setData(Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLScSzRAauM6GVHGRT-KWq3WUw6MX4Q895InFBHDG9aom4blf2Q/viewform?usp=pp_url"));
+                startActivity(browse);
             }
         });
         imageView.setOnClickListener(new View.OnClickListener() {

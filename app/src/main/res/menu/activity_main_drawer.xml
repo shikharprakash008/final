@@ -29,6 +29,12 @@
             android:title="The Team"
 
             />
+        <item
+            android:id="@+id/sponsors"
+            android:icon="@drawable/group"
+            android:title="Sponsors"
+
+            />
     </group>
     <item android:title="Communicate">
         <menu>
