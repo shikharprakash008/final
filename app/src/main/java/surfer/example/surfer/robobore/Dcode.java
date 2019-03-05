@@ -21,6 +21,7 @@ Button button;
             public void onClick(View v) {
                 Intent reg= new Intent(Dcode.this,StudentRegistartion.class);
                 startActivity(reg);
+                finish();
             }
         });
         imageView.setOnClickListener(new View.OnClickListener() {
@@ -28,6 +29,7 @@ Button button;
             public void onClick(View v) {
                 Intent back=new Intent(Dcode.this,Robotics.class);
                 startActivity(back);
+                finish();
             }
         });
     }

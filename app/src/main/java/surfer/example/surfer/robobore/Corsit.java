@@ -24,6 +24,7 @@ imageView=findViewById(R.id.imageView4);
             public void onClick(View v) {
                 Intent back= new Intent(Corsit.this,MainActivity.class);
                 startActivity(back);
+                finish();
             }
         });
     }

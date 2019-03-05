@@ -21,6 +21,7 @@ ImageView imageView;
             public void onClick(View v) {
                 Intent i=new Intent(Robothon.this,Hackathon.class);
                 startActivity(i);
+                finish();
             }
         });
         imageView.setOnClickListener(new View.OnClickListener() {
@@ -28,6 +29,7 @@ ImageView imageView;
             public void onClick(View v) {
                 Intent back= new Intent (Robothon.this,Events.class);
                 startActivity(back);
+                finish();
             }
         });
     }

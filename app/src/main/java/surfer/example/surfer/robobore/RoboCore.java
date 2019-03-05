@@ -20,6 +20,7 @@ ImageView imageView;
             public void onClick(View v) {
                 Intent back=new Intent(RoboCore.this,MainActivity.class);
                 startActivity(back);
+                finish();
             }
         });
     }

@@ -32,6 +32,7 @@ public class ContactUs extends AppCompatActivity {
             public void onClick(View v) {
                 Intent back=new Intent(ContactUs.this,MainActivity.class);
                 startActivity(back);
+                finish();
             }
         });
         button3.setOnClickListener(new View.OnClickListener() {
@@ -53,6 +54,7 @@ public class ContactUs extends AppCompatActivity {
                 Intent browse = new Intent(Intent.ACTION_VIEW);
                 browse.setData(Uri.parse("http://www.corsit.in/"));
                 startActivity(browse);
+                finish();
             }
         });
         button1.setOnClickListener(new View.OnClickListener() {

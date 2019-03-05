@@ -24,6 +24,7 @@ public class PaperPresenation extends AppCompatActivity {
             public void onClick(View v) {
                 Intent reg= new Intent(PaperPresenation.this,StudentRegistartion.class);
                 startActivity(reg);
+                finish();
             }
         });
         imageView.setOnClickListener(new View.OnClickListener() {
@@ -31,6 +32,7 @@ public class PaperPresenation extends AppCompatActivity {
             public void onClick(View v) {
                 Intent back=new Intent(PaperPresenation.this,Robotics.class);
                 startActivity(back);
+                finish();
             }
         });
     }

@@ -28,6 +28,7 @@ ImageView circleImageView,circleImageView2;
             public void onClick(View v) {
                 Intent back= new Intent(Events.this,MainActivity.class);
                 startActivity(back);
+                finish();
             }
         });
         circleImageView2.setOnClickListener(new View.OnClickListener() {
@@ -35,6 +36,7 @@ ImageView circleImageView,circleImageView2;
             public void onClick(View v) {
                 Intent hack= new Intent(Events.this,Robothon.class);
                 startActivity(hack);
+                finish();
             }
         });
         circleImageView.setOnClickListener(new View.OnClickListener() {
@@ -42,6 +44,7 @@ ImageView circleImageView,circleImageView2;
             public void onClick(View v) {
                 Intent robotics = new Intent(Events.this,Robotics.class);
                 startActivity(robotics);
+                finish();
             }
         });
     }

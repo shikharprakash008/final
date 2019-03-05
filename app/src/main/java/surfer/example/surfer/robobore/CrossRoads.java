@@ -22,6 +22,7 @@ ImageView imageView;
             public void onClick(View v) {
                 Intent reg= new Intent(CrossRoads.this,StudentRegistartion.class);
                 startActivity(reg);
+                finish();
             }
         });
         imageView.setOnClickListener(new View.OnClickListener() {
@@ -29,6 +30,7 @@ ImageView imageView;
             public void onClick(View v) {
                 Intent back=new Intent(CrossRoads.this,Robotics.class);
                 startActivity(back);
+                finish();
             }
         });
     }

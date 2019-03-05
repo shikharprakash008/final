@@ -47,6 +47,7 @@ public class StudentRegistartion extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i= new Intent(StudentRegistartion.this,MainActivity.class);
                 startActivity(i);
+                finish();
             }
         });
         button.setOnClickListener(new View.OnClickListener() {

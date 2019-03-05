@@ -25,6 +25,7 @@ ImageView imageView1;
       public void onClick(View v) {
           Intent i= new Intent(Team.this,MainActivity.class);
           startActivity(i);
+          finish();
       }
   });
   /*      String url="https://firebasestorage.googleapis.com/v0/b/robocore-bf107.appspot.com/o/arghy.jpg?alt=media&token=1ca40532-3156-4d9e-81f4-68078bf287b5";

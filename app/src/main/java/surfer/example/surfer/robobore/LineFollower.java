@@ -23,6 +23,7 @@ ImageView imageView;
             public void onClick(View v) {
                 Intent back=new Intent(LineFollower.this,Robotics.class);
                 startActivity(back);
+                finish();
             }
         });
         button.setOnClickListener(new View.OnClickListener() {
@@ -30,6 +31,7 @@ ImageView imageView;
             public void onClick(View v) {
                 Intent reg =new Intent(LineFollower.this,StudentRegistartion.class);
                 startActivity(reg);
+                finish();
             }
         });
     }
