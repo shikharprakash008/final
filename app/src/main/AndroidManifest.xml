@@ -64,9 +64,6 @@
             android:name=".prob2"
             android:theme="@style/AppTheme.CustomTheme" />
         <activity
-            android:name=".prob3"
-            android:theme="@style/AppTheme.CustomTheme" />
-        <activity
             android:name=".prob4"
             android:theme="@style/AppTheme.CustomTheme" />
         <activity
@@ -121,6 +118,9 @@
             android:name=".pop22"
             android:theme="@style/AppTheme.CustomTheme" />
         <activity android:name=".Robothon" />
+
+        <activity android:name=".Problem3"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
     </application>
 
 </manifest>

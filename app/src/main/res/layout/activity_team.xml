@@ -1835,7 +1835,7 @@
                         android:layout_height="80dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="16dp"
-                        android:src="@mipmap/arghy" />
+                        android:src="@mipmap/anshuman" />
 
                     <TextView
 
@@ -1845,17 +1845,11 @@
                         android:layout_below="@+id/image42"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="12dp"
-                        android:text="Arghyadeep"
+                        android:text="Anshuman"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp" />
 
-                    <TextView
-                        android:id="@+id/textView13"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/ank"
-                        android:layout_centerHorizontal="true"
-                        android:text="Senior Member" />
+
 
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
@@ -1885,7 +1879,7 @@
                         android:layout_height="80dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="16dp"
-                        android:src="@mipmap/dhanush" />
+                        android:src="@mipmap/arghy" />
 
                     <TextView
 
@@ -1895,7 +1889,7 @@
                         android:layout_below="@+id/image43"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="12dp"
-                        android:text="Dhanush"
+                        android:text="Arghyadeep"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp" />
 
@@ -2132,11 +2126,12 @@
                     android:layout_height="match_parent"
                     >
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/image48"
+                        android:id="@+id/image49"
                         android:layout_marginTop="16dp"
                         android:layout_centerHorizontal="true"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
+                        android:src="@mipmap/dhanush"
 
                         />
 
@@ -2145,10 +2140,10 @@
                         android:id="@+id/fars"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/image48"
+                        android:layout_below="@+id/image49"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="12dp"
-                        android:text="Ashish"
+                        android:text="Dhanush"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp" />
 
@@ -2207,6 +2202,56 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/fars1"
+                        android:layout_centerHorizontal="true"
+                        android:text="Senior Member" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+
+
+                <RelativeLayout
+
+
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image50"
+                        android:layout_marginTop="16dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+
+                        />
+
+                    <TextView
+
+                        android:id="@+id/fars2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image50"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="Farhan"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView11933"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fars2"
                         android:layout_centerHorizontal="true"
                         android:text="Senior Member" />
 

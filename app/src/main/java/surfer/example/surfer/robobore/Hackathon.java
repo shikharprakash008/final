@@ -76,7 +76,7 @@ ImageView imageView22,imageView11,imageView12,imageView13,imageView14,imageView1
         imageView4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent pop =new Intent(Hackathon.this,prob3.class);
+                Intent pop =new Intent(Hackathon.this,Problem3.class);
                 startActivity(pop);finish();
             }
         });

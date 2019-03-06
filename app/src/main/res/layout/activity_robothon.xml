@@ -104,6 +104,8 @@ After completing the payment process click the button below to complete the regi
                 android:textStyle="italic"
                 android:textSize="15sp"
                 android:layout_below="@+id/text2"/>
+
+
         </RelativeLayout>
     </LinearLayout>
 </ScrollView>

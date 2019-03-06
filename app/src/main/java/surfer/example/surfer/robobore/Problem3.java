@@ -8,12 +8,13 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
 
-public class prob3 extends AppCompatActivity {
+public class Problem3 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_prob3);
+        setContentView(R.layout.activity_problem3);
+
         DisplayMetrics dm =new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);
 

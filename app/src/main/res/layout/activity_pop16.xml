@@ -16,7 +16,7 @@
         android:gravity="center"
         android:text="Problem Statement 16"
         android:textColor="@color/white"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
     <TextView
@@ -25,7 +25,7 @@
         android:textColor="@color/white"
         android:id="@+id/text2"
         android:layout_below="@+id/text"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:textSize="24sp"
         android:text="Rail Yantra"
@@ -36,7 +36,7 @@
         android:layout_width="match_parent"
         android:id="@+id/text3"
         android:layout_below="@+id/text2"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:text="Maintenance of train tracks is a tedious task.Prepare an innovative solution for this isssue.Working is always welcomed."
         android:textColor="@color/white"
         android:textStyle="italic"
@@ -50,7 +50,7 @@
         android:layout_below="@+id/text3"
         android:layout_alignParentStart="true"
         android:layout_marginStart="58dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="5dp"
         android:background="@drawable/rounded_button"
         android:gravity="center"
         android:text="REGISTER"
