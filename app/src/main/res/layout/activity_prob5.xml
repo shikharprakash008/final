@@ -39,7 +39,6 @@
         android:id="@+id/text3"
         android:layout_below="@+id/text2"
         android:layout_marginTop="20dp"
-        android:text="A bot that keeps track of your fitness based on steps walked calories burnt etc and helps you stay fit."
         android:textColor="@color/white"
         android:textStyle="italic"
         android:gravity="center"

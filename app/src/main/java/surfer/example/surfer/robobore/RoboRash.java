@@ -1,16 +1,28 @@
 package surfer.example.surfer.robobore;
 
+import android.arch.core.executor.DefaultTaskExecutor;
 import android.content.Intent;
+import android.net.NetworkInfo;
 import android.net.Uri;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class RoboRash extends AppCompatActivity {
 Button button;
 ImageView imageView;
+TextView textView,textView1;
+DatabaseReference databaseReference;
   ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +55,36 @@ ImageView imageView;
                 browse.setData(Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLSfeJZ7aO4eo3FzkTV6EI5Byc993o1VYSefmoEXSQVwTjLmAjA/viewform?usp=pp_url"));
                 startActivity(browse);
                 finish();
+            }
+        });
+        textView=findViewById(R.id.text1);
+
+        databaseReference =FirebaseDatabase.getInstance().getReference().child("roborash");
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                String s = dataSnapshot.getValue().toString();
+                textView.setText(s);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+        textView1=findViewById(R.id.text3);
+
+        databaseReference =FirebaseDatabase.getInstance().getReference().child("register");
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                String s = dataSnapshot.getValue().toString();
+                textView1.setText(s);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
             }
         });
     }

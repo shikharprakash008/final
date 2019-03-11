@@ -39,11 +39,11 @@
         android:id="@+id/text3"
         android:layout_below="@+id/text2"
         android:layout_marginTop="20dp"
-        android:text="A shopping store assistant that will help the customer around the store to purhcase items."
         android:textColor="@color/white"
         android:textStyle="italic"
         android:gravity="center"
         android:textSize="20sp"
+        android:text="A shopping store assistant that will help the customer around the store to purhcase items."
         android:layout_height="wrap_content" />
     <Button
         android:id="@+id/button"
@@ -51,7 +51,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/text3"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_marginStart="58dp"
+        android:layout_marginLeft="58dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/rounded_button"
         android:gravity="center"

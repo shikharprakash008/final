@@ -23,8 +23,10 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
                 app:srcCompat="@drawable/back" />
 
             <TextView
@@ -33,8 +35,9 @@
                 android:layout_height="wrap_content"
                 android:layout_alignBottom="@+id/imageView4"
                 android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
                 android:layout_marginStart="50dp"
-
+                android:layout_marginLeft="50dp"
                 android:text="Paper Presentation"
                 android:textColor="@color/white"
                 android:textSize="26sp"
@@ -48,11 +51,11 @@
 
             <TextView
                 android:layout_marginStart="10dp"
-                android:layout_marginEnd="10sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
                 android:id="@+id/text1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Design a wired robot within specified dimensions that can be operated manually and can travel through all turns of the track adorned with mud, speed breakers, hurdles, bumps and a lot more from the starting position to the finish, without going outside the track. Hit the roads full-throttle , hit the top gear and take the fastlane to glory."
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:textColor="@color/black"/>
@@ -95,12 +98,7 @@
                 android:id="@+id/text3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Please pay to this number 8310351715 through UPI
-(Google Pay,PhonePE,BHIM,PAYTM)\n\n
-
-Dont forget to take the screenshot after the payment.\n\n
-After completing the payment process click the button below to complete the registration.
-"
+                android:text=""
                 android:textColor="@color/black"
                 android:textStyle="italic"
                 android:textSize="15sp"
@@ -111,7 +109,9 @@ After completing the payment process click the button below to complete the regi
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/text3"
                 android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
                 android:layout_marginStart="92dp"
+                android:layout_marginLeft="92dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/rounded_button"
                 android:gravity="center"

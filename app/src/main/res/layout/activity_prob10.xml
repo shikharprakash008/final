@@ -39,7 +39,6 @@
         android:id="@+id/text3"
         android:layout_below="@+id/text2"
         android:layout_marginTop="20dp"
-        android:text="Mess food waste saver,prepare an innovative solution which can make good use of the the leftover food or prevent the food from getting wasted."
         android:textColor="@color/white"
         android:textStyle="italic"
         android:gravity="center"
