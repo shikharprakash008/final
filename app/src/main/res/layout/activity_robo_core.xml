@@ -67,9 +67,9 @@
                 android:layout_below="@+id/text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="A National Level robotics championship, a battlefield to come, clash innovations and design and fight for glory. Robocore-2012, '13, '14, '15, '16, '17 Siddaganga Institute Of Technology presents to you an enthralling and amplified sixth installation ROBOCORE 2019.
+                android:text="A National Level robotics championship, a battlefield to come, clash innovations and design and fight for glory. Robocore-2012, '13, '14, '15, '16, '17 Siddaganga Institute Of Technology presents to you an enthralling and amplified sixth installation ROBOCORE 2019.\n
 
-My sincere Asimov
+My sincere Asimov\n
 YES, this time LAWS WILL BE BROKEN BECAUSE, EXISTENCE IS AT STAKE. The club organizes ROBOCORE, one of the biggest robotics event in Karnataka. With the blessings of our beloved late Dr. Sree Sree Sree Sivakumara Swamigalu, we have successfully organised events related to Robo-Race, Robo Soccer, Bluetooth Bot Race, Line Follower, Robothon(8hr Robotics Hackathon) Decode and Paper Presentation."
 
                 android:textSize="12sp"

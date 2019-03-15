@@ -13,7 +13,7 @@ import java.nio.channels.InterruptedByTimeoutException;
 
 public class Hackathon extends AppCompatActivity {
 ImageView imageView,imageView1,imageView2,imageView4,imageView5,imageView6,imageView7,imageView8,imageView9,imageView10;
-ImageView imageView22,imageView11,imageView12,imageView13,imageView14,imageView16,imageView15,imageView17,imageView18,imageView19,imageView20,imageView21;
+ImageView imageView22,imageView11,imageView12,imageView13,imageView14,imageView16,imageView15,imageView17,imageView18,imageView19,imageView20,imageView21,imageView23;
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +41,7 @@ ImageView imageView22,imageView11,imageView12,imageView13,imageView14,imageView1
         imageView20=findViewById(R.id.image20);
         imageView21=findViewById(R.id.image21);
         imageView22=findViewById(R.id.image22);
+        imageView23=findViewById(R.id.image24);
 
 
 
@@ -223,7 +224,13 @@ ImageView imageView22,imageView11,imageView12,imageView13,imageView14,imageView1
             }
         });
 
-
-
+        imageView23.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent pop =new Intent(Hackathon.this,Innovation.class);
+                startActivity(pop);
+//                finish();
+            }
+        });
     }
 }

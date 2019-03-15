@@ -57,12 +57,26 @@
             android:layout_height="wrap_content"
             android:text="Robothon:An 8 hour robotics hackathon\n\n
 Collaboration is power! The world is never the same since the surge of robots and the emergence of Robotics. Can you solve the real time problems that we face everyday with robots in 8 hours? A platform to put your 'ideas into reality' with the ideal motive to contribute to the society, Robocore'19 presents the first ever edition of Robotics Hackathon, ' Robothon'. Submit your ideas pertaining to any of the mentioned domains or you are also allowed to pitch your own idea under open innovation.\n\n
-Abstract submission open, mail the abstracts to corsit.sit@gmail.com\n\n
-Last date to submit the abstract 12th March\n\n
+
+Last date to submit the abstract 17th March\n\n
 Ideas will be selected on the basis of innovation, originality, feasibility , social cause.Your solutions can be either hardware or software."
             android:textSize="15sp"
             android:textStyle="bold"
             android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:text="Robothon just got expanded. Open innovation domain has been added.Come showcase your innovation skills.If you have any ideas register below."
+                android:textColor="@color/red"
+                />
 
 
 
@@ -70,7 +84,7 @@ Ideas will be selected on the basis of innovation, originality, feasibility , so
                 android:id="@+id/button"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/text"
+                android:layout_below="@+id/tv"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="10dp"
@@ -119,12 +133,6 @@ Ideas will be selected on the basis of innovation, originality, feasibility , so
                 android:id="@+id/text5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Please pay to this number 8310351715 through UPI
-(Google Pay,PhonePE,BHIM,PAYTM)\n\n
-
-Dont forget to take the screenshot after the payment.\n\n
-After completing the payment process click the button below to complete the registration.
-"
                 android:textColor="@color/black"
                 android:textStyle="italic"
                 android:textSize="15sp"
