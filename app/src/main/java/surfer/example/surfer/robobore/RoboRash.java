@@ -43,7 +43,7 @@ DatabaseReference databaseReference;
             @Override
             public void onClick(View v) {
                 Intent browse = new Intent(Intent.ACTION_VIEW);
-                browse.setData(Uri.parse("https://drive.google.com/file/d/16SqBxIS2hBgFrhBZu6Q1kYUrtFrbZ0RG/view?usp=sharing"));
+                browse.setData(Uri.parse("https://drive.google.com/file/d/1O-yOkOvHSpoG7V6R9fvnzIUyAteus71o/view?usp=sharing"));
                 startActivity(browse);
             }
         });
